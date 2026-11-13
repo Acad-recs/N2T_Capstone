@@ -1,0 +1,86 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/05/CPU.hdl
+
+/**
+ * The Hack Central Processing unit (CPU).
+ * Parses the binary code in the instruction input and executes it according to the
+ * Hack machine language specification. In the case of a C-instruction, the c-field
+ * determines what the ALU will compute, and the d-field determines where the
+ * ALU output is sent. The instruction may also include jump bits to control branching.
+ */
+
+CHIP CPU {
+
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+                         // program (reset==1) or continue executing
+                         // the current program (reset==0).
+
+    OUT outM[16],        // M value output
+        writeM,          // Write to M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+
+    PARTS:
+    // Instruction decoding:
+    // instruction[15] == 0: A-instruction (@value)
+    // instruction[15] == 1: C-instruction (111 a c1..c6 d1..d3 j1..j3)
+    Not(in=instruction[15], out=isAInstr);
+    Not(in=isAInstr, out=isCInstr);
+
+    // A-Register logic:
+    // Loads if A-instruction OR (C-instruction and d1 (instruction[5]) is set)
+    And(a=isCInstr, b=instruction[5], out=isLoadAFromALU);
+    Or(a=isAInstr, b=isLoadAFromALU, out=loadA);
+    Mux16(a=instruction, b=aluOut, sel=isLoadAFromALU, out=inAReg);
+    ARegister(in=inAReg, load=loadA, out=outA, out[0..14]=addressM);
+
+    // D-Register logic:
+    // Loads if C-instruction and d2 (instruction[4]) is set
+    And(a=isCInstr, b=instruction[4], out=loadD);
+    DRegister(in=aluOut, load=loadD, out=outD);
+
+    // ALU input selection:
+    // a-bit is instruction[12]. If 0 -> A; if 1 -> inM
+    Mux16(a=outA, b=inM, sel=instruction[12], out=aluInY);
+
+    // ALU execution:
+    // Control bits: c1..c6 are instruction[11..6]
+    ALU(x=outD, y=aluInY, 
+        zx=instruction[11], 
+        nx=instruction[10], 
+        zy=instruction[9], 
+        ny=instruction[8], 
+        f=instruction[7], 
+        no=instruction[6], 
+        out=aluOut, 
+        out=outM, 
+        zr=zrOut, 
+        ng=ngOut);
+
+    // Write to memory (writeM):
+    // Enabled if C-instruction and d3 (instruction[3]) is set
+    And(a=isCInstr, b=instruction[3], out=writeM);
+
+    // Program Counter (PC) jump logic:
+    // j1 = instruction[2] (jump if out < 0)
+    // j2 = instruction[1] (jump if out == 0)
+    // j3 = instruction[0] (jump if out > 0)
+    Or(a=zrOut, b=ngOut, out=zrOrNg);
+    Not(in=zrOrNg, out=posOut); // strictly positive (out > 0)
+
+    And(a=instruction[2], b=ngOut, out=jlt);
+    And(a=instruction[1], b=zrOut, out=jeq);
+    And(a=instruction[0], b=posOut, out=jgt);
+
+    Or(a=jlt, b=jeq, out=jle);
+    Or(a=jle, b=jgt, out=jumpCond);
+    And(a=isCInstr, b=jumpCond, out=doJump);
+
+    // If jump -> load=1, inc=0. Otherwise load=0, inc=1
+    Not(in=doJump, out=noJump);
+    PC(in=outA, load=doJump, inc=noJump, reset=reset, out[0..14]=pc);
+}

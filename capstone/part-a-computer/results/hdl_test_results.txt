@@ -1,0 +1,5 @@
+capstone/part-a-computer/tests/CPU.tst: End of script - Comparison ended successfully
+capstone/part-a-computer/tests/Memory.tst: End of script - Comparison ended successfully
+capstone/part-a-computer/tests/ComputerAdd.tst: End of script - Comparison ended successfully
+capstone/part-a-computer/tests/ComputerMax.tst: End of script - Comparison ended successfully
+capstone/part-a-computer/tests/ComputerRect.tst: End of script - Comparison ended successfully
