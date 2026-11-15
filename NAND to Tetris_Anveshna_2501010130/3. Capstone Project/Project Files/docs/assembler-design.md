@@ -57,4 +57,4 @@ The assembler was validated against the official Nand to Tetris benchmark suite 
 | `Rect.asm` | 25 | **MATCH** | Exact bit-for-bit (100%) |
 | `Pong.asm` | 27,483 | **MATCH** | Exact bit-for-bit (100%) |
 
-All generated machine code files and `symbols.txt` are preserved in `capstone/part-b-assembler/output/`.
+All generated machine code files and `symbols.txt` are preserved in `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/output/`.

@@ -54,8 +54,8 @@ All five official test scripts from Nand to Tetris were executed and passed with
 
 | Test Script | Status | Output Comparison | Evidence File |
 |---|---|---|---|
-| `CPU.tst` | **PASSED** | Comparison ended successfully | [results/CPU.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/capstone/part-a-computer/results/CPU.out) |
-| `Memory.tst` | **PASSED** | Comparison ended successfully | [results/Memory.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/capstone/part-a-computer/results/Memory.out) |
-| `ComputerAdd.tst` | **PASSED** | Comparison ended successfully | [results/ComputerAdd.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/capstone/part-a-computer/results/ComputerAdd.out) |
-| `ComputerMax.tst` | **PASSED** | Comparison ended successfully | [results/ComputerMax.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/capstone/part-a-computer/results/ComputerMax.out) |
-| `ComputerRect.tst` | **PASSED** | Comparison ended successfully | [results/ComputerRect.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/capstone/part-a-computer/results/ComputerRect.out) |
+| `CPU.tst` | **PASSED** | Comparison ended successfully | [results/CPU.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-a-computer/results/CPU.out) |
+| `Memory.tst` | **PASSED** | Comparison ended successfully | [results/Memory.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-a-computer/results/Memory.out) |
+| `ComputerAdd.tst` | **PASSED** | Comparison ended successfully | [results/ComputerAdd.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-a-computer/results/ComputerAdd.out) |
+| `ComputerMax.tst` | **PASSED** | Comparison ended successfully | [results/ComputerMax.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-a-computer/results/ComputerMax.out) |
+| `ComputerRect.tst` | **PASSED** | Comparison ended successfully | [results/ComputerRect.out](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-a-computer/results/ComputerRect.out) |
