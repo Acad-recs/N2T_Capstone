@@ -68,10 +68,10 @@ All 5 mandatory test scripts were executed using the official Nand to Tetris Har
 ### Assembler Verification Results (Part B)
 | Program | Number of Instructions | Custom Assembler Output | Official Assembler Output | Match Status |
 |---|---|---|---|---|
-| `Add.asm` | 6 | `capstone/part-b-assembler/output/Add.hack` | `capstone/part-b-assembler/test_programs/Add.hack` | **Exact Bit-for-Bit Match** |
-| `Max.asm` | 16 | `capstone/part-b-assembler/output/Max.hack` | `capstone/part-b-assembler/test_programs/Max.hack` | **Exact Bit-for-Bit Match** |
-| `Rect.asm` | 25 | `capstone/part-b-assembler/output/Rect.hack` | `capstone/part-b-assembler/test_programs/Rect.hack` | **Exact Bit-for-Bit Match** |
-| `Pong.asm` | 27,483 | `capstone/part-b-assembler/output/Pong.hack` | `capstone/part-b-assembler/test_programs/Pong.hack` | **Exact Bit-for-Bit Match** |
+| `Add.asm` | 6 | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/output/Add.hack` | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/test_programs/Add.hack` | **Exact Bit-for-Bit Match** |
+| `Max.asm` | 16 | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/output/Max.hack` | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/test_programs/Max.hack` | **Exact Bit-for-Bit Match** |
+| `Rect.asm` | 25 | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/output/Rect.hack` | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/test_programs/Rect.hack` | **Exact Bit-for-Bit Match** |
+| `Pong.asm` | 27,483 | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/output/Pong.hack` | `NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/part-b-assembler/test_programs/Pong.hack` | **Exact Bit-for-Bit Match** |
 
 ### CPU Emulator Box Program Verification (Part C)
 Testing via the CPU Emulator demonstrated strict boundary compliance:
