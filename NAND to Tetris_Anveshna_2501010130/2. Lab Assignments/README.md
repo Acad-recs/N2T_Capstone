@@ -1,2 +1,2 @@
-This directory is reserved for the Lab Assignments of the Nand to Tetris course.
-Place the assignment PDFs here.
+This directory is reserved for the Theory Assignments of the Nand to Tetris course. 
+LabI and LabII have been uploaded.
