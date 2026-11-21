@@ -56,9 +56,9 @@ N2T_Capstone/
 
 ## 🚀 Navigation & Quick Links
 
-- **Formal Academic Report:** [`NAND to Tetris_Anveshna_2501010130/3. Capstone Project/academic_report.md`](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND%20to%20Tetris_Anveshna_2501010130/3.%20Capstone%20Project/academic_report.md)
-- **Capstone Project Files:** [`NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/`](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND%20to%20Tetris_Anveshna_2501010130/3.%20Capstone%20Project/Project%20Files/)
-- **Viva Voce Preparation Guide:** [`NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/docs/viva-preparation.md`](file:///c:/Users/WINNTUSIT/Desktop/N2T_Capstone/NAND%20to%20Tetris_Anveshna_2501010130/3.%20Capstone%20Project/Project%20Files/docs/viva-preparation.md)
+- **Formal Academic Report:** [`NAND to Tetris_Anveshna_2501010130/3. Capstone Project/academic_report.md`](NAND%20to%20Tetris_Anveshna_2501010130/3.%20Capstone%20Project/academic_report.md)
+- **Capstone Project Files:** [`NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/`](NAND%20to%20Tetris_Anveshna_2501010130/3.%20Capstone%20Project/Project%20Files/)
+- **Viva Voce Preparation Guide:** [`NAND to Tetris_Anveshna_2501010130/3. Capstone Project/Project Files/docs/viva-preparation.md`](NAND%20to%20Tetris_Anveshna_2501010130/3.%20Capstone%20Project/Project%20Files/docs/viva-preparation.md)
 
 ---
 
